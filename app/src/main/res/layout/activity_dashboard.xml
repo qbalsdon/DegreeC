@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.berry.degreec.DashboardActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_above="@+id/centre">
+
+    <com.berry.degreec.view.Thermometer
+        android:id="@+id/thermometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_toLeftOf="@+id/sub_centre"
+        app:innerColor="@android:color/holo_red_light"
+        app:middleColor="@android:color/white"
+        app:outerColor="@android:color/darker_gray"
+        app:radius="30dp"/>
+
+    <View
+        android:id="@+id/sub_centre"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_centerInParent="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/sub_centre">
+
+        <Button
+            android:id="@+id/set_alarm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Set alarm"/>
+
+        <Button
+            android:id="@+id/cancel_alarm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel_alarm"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
+    <View
+        android:id="@+id/centre"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_centerInParent="true"/>
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/graph"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/centre"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

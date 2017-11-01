@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">ºC</string>
+    <string name="temperature">Temperature</string>
+    <string name="check_time">Every day at</string>
+    <string name="default_time">Time</string>
+    <string name="default_temperature">Temperature</string>
+    <string name="if_label">if the temperature is</string>
+    <string name="enabled">Enabled</string>
+    <string name="error_time">Invalid time preference</string>
+    <string name="error_temperature">Invalid temperature value</string>
+    <string name="alarm_cancelled">Alarm cancelled</string>
+    <string name="alarm_set">Alarm set</string>
+    <string name="set_alarm">Set Alarm</string>
+    <string name="cancel_alarm">Cancel alarm</string>
+
+    <string-array name="condition_selection">
+        <item>Above</item>
+        <item>Below</item>
+        <item>Equal To</item>
+    </string-array>
+</resources>
