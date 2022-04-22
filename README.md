@@ -1,3 +1,5 @@
+# DEPRECATED: This project is no longer maintained
+
 #Welcome to DegreeC
 
 This is the Android accompanying app for DegreeCNode (https://github.com/qbalsdon/DegreeCNode)
